@@ -8,6 +8,9 @@ echo "Deploying IcyahApi Service to local tomcat"
 cp target/IcyahApi.war /usr/local/Cellar/tomcat/8.5.3/libexec/webapps
 echo "Copied IcyahApi.war successfully!"
 
+echo "Stop tomcat"
+/usr/local/Cellar/tomcat/8.5.3/libexec/bin/shutdown.sh
+
 echo "Starting tomcat"
 /usr/local/Cellar/tomcat/8.5.3/libexec/bin/startup.sh
 
