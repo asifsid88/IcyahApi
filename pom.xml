@@ -14,15 +14,24 @@
         <jUnitVersion>4.1</jUnitVersion>
         <razorpayVersion>1.0.0</razorpayVersion>
         <servletVersion>2.5</servletVersion>
+        <mailVersion>1.4.7</mailVersion>
     </properties>
 
 
     <dependencies>
+        <!-- jUnit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${jUnitVersion}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Mail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${mailVersion}</version>
         </dependency>
 
         <!-- Razorpay -->
@@ -58,6 +67,12 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>${servletVersion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>4.2.1.RELEASE</version>
         </dependency>
     </dependencies>
 

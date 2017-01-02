@@ -9,7 +9,7 @@
 <script
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="rzp_test_mUK32sgx627JnY"
-    data-amount="100"
+    data-amount="50000"
     data-buttontext="Pay with Razorpay"
     data-name="Icyah"
     data-description="This purchase is for testing"
